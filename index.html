@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /*css reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bm.jpg');
+            background-position: calc(70%);
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+
+        .mid {
+            /*three things essential to get an element into center-display:block, width:33%(approx), margin:12px auto(auto on x axis)*/
+            /* border: 2px solid rgb(72, 255, 0); */
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+        }
+
+        .right {
+            /* border: 2px solid rgb(40, 43, 214); */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 20px;
+        }
+
+        /*if the curser is on class element and if the element is active, it will underline the element*/
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: turquoise;
+        }
+
+        .left img {
+            width: 162px;
+            filter: invert(100%);
+            /* -----this invert() function turns the black image into white or white into black
+             as it convert black image to white*/
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 20px;
+            font-size: 20px;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: burlywood;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 175px 20px;
+            padding: 20px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 465px;
+            padding: 10px;
+            border: 2px solid brown;
+            margin: 10px auto;
+            border-radius: 7px;
+            font-size: 18px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 97%;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/dumb.png" alt="">
+            <div>Jay Singh Fitness</div>
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Chat Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Now</h1>
+        <form action="noAction.php">
+        <div class="form-group">
+            <!-- input:text -----to get the whole line -->
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <!-- input:text -----to get the whole line -->
+            <input type="text" name="" placeholder="Enter Your Age">
+        </div>
+        <div class="form-group">
+            <!-- input:text -----to get the whole line -->
+            <input type="text" name="" placeholder="Enter Your Gender">
+        </div>
+        <div class="form-group">
+            <!-- input:text -----to get the whole line -->
+            <input type="text" name="" placeholder="Enter Your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+
+</html>
